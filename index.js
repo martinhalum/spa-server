@@ -5,113 +5,55 @@ const { v4: uuidv4 } = require("uuid");
 const employees = [
   {
     id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "Martin Jaycy Halum",
-    primaryAddress:
-      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
-    primaryContactInfo: "09267515599",
-    age: 33,
-    yearsInCompany: 0,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "Martin Jaycy Halum",
-    primaryAddress:
-      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
-    primaryContactInfo: "09267515599",
-    age: 33,
-    yearsInCompany: 0,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "John Doe",
-    primaryAddress: "123 Main Street",
-    primaryContactInfo: "555-123-4567",
-    age: 30,
-    yearsInCompany: 5,
-  },
-  {
-    id: uuidv4(),
-    name: "Martin Jaycy Halum",
-    primaryAddress:
-      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
-    primaryContactInfo: "09267515599",
-    age: 33,
-    yearsInCompany: 0,
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    position: "Developer",
+    date_hired: "09/18/2023",
+    contact_info: {
+      primary: "09267515599",
+      others: ["09696230001", "09761674246"],
+    },
+    address: {
+      primary:
+        "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+      others: [
+        "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+        "29-41 BNR Compound Gov Pascual Ave Malabon City",
+      ],
+    },
   },
 ];
 
 const typeDefs = gql`
+  type Contact {
+    primary: String!
+    others: [String]
+  }
+
+  type Address {
+    primary: String!
+    others: [String]
+  }
+
+  input InputTypes {
+    primary: String!
+    others: [String]
+  }
+
   type Employee {
     id: ID!
-    name: String!
-    primaryAddress: String!
-    primaryContactInfo: String!
-    age: Int!
-    yearsInCompany: Int!
+    first_name: String!
+    last_name: String!
+    middle_name: String
+    birthday: String!
+    gender: String!
+    position: String!
+    date_hired: String!
+    contact_info: Contact!
+    address: Address!
   }
 
   type Total {
@@ -127,19 +69,28 @@ const typeDefs = gql`
 
   type Mutation {
     addEmployee(
-      name: String!
-      primaryAddress: String!
-      primaryContactInfo: String!
-      age: Int!
-      yearsInCompany: Int!
+      id: ID!
+      first_name: String!
+      last_name: String!
+      middle_name: String
+      birthday: String!
+      gender: String!
+      position: String!
+      date_hired: String!
+      contact_info: InputTypes!
+      address: InputTypes!
     ): Employee
     editEmployee(
       id: ID!
-      name: String!
-      primaryAddress: String!
-      primaryContactInfo: String!
-      age: Int!
-      yearsInCompany: Int!
+      first_name: String!
+      last_name: String!
+      middle_name: String
+      birthday: String!
+      gender: String!
+      position: String!
+      date_hired: String!
+      contact_info: InputTypes!
+      address: InputTypes!
     ): Employee
     deleteEmployee(id: ID!): Employee
   }
