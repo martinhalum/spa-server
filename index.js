@@ -10,39 +10,200 @@ const employees = [
     middle_name: "De Guzman",
     birthday: "12/19/1989",
     gender: "Male",
+    marital_status: "Married",
     position: "Developer",
     date_hired: "09/18/2023",
-    contact_info: {
-      primary: "09267515599",
-      others: ["09696230001", "09761674246"],
-    },
-    address: {
-      primary:
-        "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
-      others: [
-        "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
-        "29-41 BNR Compound Gov Pascual Ave Malabon City",
-      ],
-    },
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
+  },
+  {
+    id: uuidv4(),
+    first_name: "Martin Jaycy",
+    last_name: "Halum",
+    middle_name: "De Guzman",
+    birthday: "12/19/1989",
+    gender: "Male",
+    marital_status: "Married",
+    position: "Developer",
+    date_hired: "09/18/2023",
+
+    primary_number: "09267515599",
+    other_number: ["09696230001", "09761674246"],
+    primary_address:
+      "Blk4 Lot7 Bronze Meadow St, Westernvill Sapphire Brgy Tagpos, Binangonan Rizal",
+    other_address: [
+      "#14 Purok 2 Marasat Pequeno San Mateo Isabela",
+      "29-41 BNR Compound Gov Pascual Ave Malabon City",
+    ],
   },
 ];
 
 const typeDefs = gql`
-  type Contact {
-    primary: String!
-    others: [String]
-  }
-
-  type Address {
-    primary: String!
-    others: [String]
-  }
-
-  input InputTypes {
-    primary: String!
-    others: [String]
-  }
-
   type Employee {
     id: ID!
     first_name: String!
@@ -50,10 +211,13 @@ const typeDefs = gql`
     middle_name: String
     birthday: String!
     gender: String!
+    marital_status: String!
     position: String!
     date_hired: String!
-    contact_info: Contact!
-    address: Address!
+    primary_number: String!
+    other_number: [String]
+    primary_address: String!
+    other_address: [String]
   }
 
   type Total {
@@ -75,10 +239,13 @@ const typeDefs = gql`
       middle_name: String
       birthday: String!
       gender: String!
+      marital_status: String!
       position: String!
       date_hired: String!
-      contact_info: InputTypes!
-      address: InputTypes!
+      primary_number: String!
+      other_number: [String]
+      primary_address: String!
+      other_address: [String]
     ): Employee
     editEmployee(
       id: ID!
@@ -87,10 +254,13 @@ const typeDefs = gql`
       middle_name: String
       birthday: String!
       gender: String!
+      marital_status: String!
       position: String!
       date_hired: String!
-      contact_info: InputTypes!
-      address: InputTypes!
+      primary_number: String!
+      other_number: [String]
+      primary_address: String!
+      other_address: [String]
     ): Employee
     deleteEmployee(id: ID!): Employee
   }
@@ -115,7 +285,7 @@ const resolvers = {
   Mutation: {
     addEmployee: (parent, args) => {
       const newEmployee = {
-        id: (employees.length + 1).toString(),
+        id: uuidv4(),
         ...args,
       };
       employees.push(newEmployee);
